@@ -28,3 +28,16 @@ class Vehicule:
     @property
     def immatriculation(self):
         return self.__immatriculation
+
+    def __str__(self):
+        # Exemple : "Citroën C3 noire / Prix: 10900€ / Immatriculation: AB-123-CD"
+        return f"{self.__marque} {self.__modele} {self.__couleur} / Prix: {self.__prix}€ / Immatriculation: " \
+               f"{str(self.__immatriculation)}"
+
+    def is_valid(self):
+        # Est valide si l'immatriculation est valide,
+        # si la couleur est blanche, noire ou grise,
+        # et si la marque n'est pas FakeBrand.
+        return self.__immatriculation.is_valid() and \
+               self.__couleur in ["blanche", "noire", "grise"] and \
+               self.__marque != "FakeBrand"
