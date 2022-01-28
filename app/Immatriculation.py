@@ -21,6 +21,6 @@ class Immatriculation:
         # Example : "NE-212-BA 91" est valide
         # Les deux derniers numéro doivent former 75, 77, 78, 91, 92, 93, 94, ou 95
         if re.match("^[A-Z]{2}-[0-9]{3}-[A-Z]{2} [0-9]{2}$", self.__str__()) \
-                and self.__numero_departement in [75, 77, 78, 91, 92, 93, 94, 95]:
+                and self.__numero_departement in ["75", "77", "78", "91", "92", "93", "94", "95"]:
             return True
         return False

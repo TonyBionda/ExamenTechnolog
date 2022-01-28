@@ -13,7 +13,7 @@ def test_immatriculation_tostring():
 
 
 def test_immatriculation_isvalid():
-    immat = Immatriculation("AB-123-CD", "13")
+    immat = Immatriculation("AB-123-CD", "75")
     assert immat.is_valid()
-    immat = Immatriculation("AZ-123-CD3", "R2")
+    immat = Immatriculation("AZ-123-CD3", "13")
     assert not immat.is_valid()
