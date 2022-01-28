@@ -4,4 +4,4 @@ RUN pip install pymongo
 
 COPY . .
 
-CMD python3 seed_mongo.py
+CMD python3 seeder.py
