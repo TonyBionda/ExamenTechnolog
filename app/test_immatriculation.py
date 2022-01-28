@@ -1,10 +1,19 @@
+from Immatriculation import Immatriculation
+
+
 def test_immatriculation_constructor():
-    pass
-
-
-def test_immatriculation_isvalid():
-    pass
+    immat = Immatriculation("AB-123-CD", "13")
+    assert immat.numero_immat == "AB-123-CD"
+    assert immat.numero_departement == "13"
 
 
 def test_immatriculation_tostring():
-    pass
+    immat = Immatriculation("AB-123-CD", "13")
+    assert str(immat) == "AB-123-CD 13"
+
+
+def test_immatriculation_isvalid():
+    immat = Immatriculation("AB-123-CD", "13")
+    assert immat.is_valid()
+    immat = Immatriculation("AZ-123-CD3", "R2")
+    assert not immat.is_valid()
