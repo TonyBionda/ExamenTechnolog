@@ -1,0 +1,16 @@
+Instructions pour lancer l'application :
+
+- Cloner le repo
+- Aller dans le dossier principal
+- Tapez docker-compose up
+
+ENJOY !
+
+Les images sur docker hub :
+- https://hub.docker.com/repository/docker/deimox/api_rest
+- https://hub.docker.com/repository/docker/deimox/seeder
+
+Pour comprendre l'API et son utilisation, vous pouvez aller sur /docs
+Il y a plusieurs endpoints :
+/vehicules
+/vehicules/prix
