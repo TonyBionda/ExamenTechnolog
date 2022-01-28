@@ -3,8 +3,8 @@ import re
 
 class Immatriculation:
     def __init__(self, numero_immat, numero_departement):
-        self.__numero_immat = numero_immat
-        self.__numero_departement = numero_departement
+        self.__numero_immat: str = numero_immat
+        self.__numero_departement: str = numero_departement
 
     @property
     def numero_immat(self):
