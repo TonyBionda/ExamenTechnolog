@@ -1,8 +1,9 @@
-<h1 align="center">ExamenTechnolog</h1>
+<div align="center">
+  <h1>ExamenTechnolog</h1>
+  <em>Repo sur le partiel Technolog M1MIA-A le 28/01/2022 qui a duré 3 heures.Le sujet est disponible sur le repo dans le fichier <strong>sujet-examen.pdf</strong></em>
+</div>
 
-*Repo sur le partiel Technolog M1MIA-A le 28/01/2022 qui a duré 3 heures.
-Le sujet est disponible sur le repo dans le fichier __sujet-examen.pdf__*
-
+--- 
 
 **Instructions pour lancer l'application :**
 - Clonez le repo
